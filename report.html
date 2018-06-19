@@ -12123,8 +12123,104 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 <p>Sample 0: This composure feels like a supermarket, as the sales are spread across all the sections. With groceries, milk, delicatessen and fresh being above mean.</p>
-<p>Sample 1: This may be a cafe, because frequent / high purchases of Milk, Grocery and Detergents_Paper are usually significant in cafes.</p>
-<p>Sample 2: This would be a restaurant with very high fresh, frozen, milk sections and low delicatessen. Also, the level of detergent_paper and grocery are lower than most.</p>
+<table>
+<thead><tr>
+<th style="text-align:center">Sample 0</th>
+<th style="text-align:center">Fresh</th>
+<th style="text-align:center">Milk</th>
+<th style="text-align:center">Grocery</th>
+<th style="text-align:center">Frozen</th>
+<th style="text-align:center">Detergent_Paper</th>
+<th style="text-align:center">Delicatessen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Gross</td>
+<td style="text-align:center">7579</td>
+<td style="text-align:center">4956</td>
+<td style="text-align:center">9426</td>
+<td style="text-align:center">1669</td>
+<td style="text-align:center">3321</td>
+<td style="text-align:center">2566</td>
+</tr>
+<tr>
+<td style="text-align:center">Mean</td>
+<td style="text-align:center">12000.30</td>
+<td style="text-align:center">5796.27</td>
+<td style="text-align:center">7951.28</td>
+<td style="text-align:center">3071.94</td>
+<td style="text-align:center">2881.49</td>
+<td style="text-align:center">2566</td>
+</tr>
+</tbody>
+</table>
+<p>Sample 1: This may be a cafe, because frequent / high purchases of Milk, Grocery and Detergents_Paper are usually significant in cafes. The data shows that Fresh, Frozen are substantially on the lower side of mean / average. Deli is not very far from mean, Milk, Grocery and Detergent_Paper are on the higher side or very high compared to the mean / average values this pattern resembles with the nautre of transactions in a cafe.</p>
+<table>
+<thead><tr>
+<th style="text-align:center">Sample 1</th>
+<th style="text-align:center">Fresh</th>
+<th style="text-align:center">Milk</th>
+<th style="text-align:center">Grocery</th>
+<th style="text-align:center">Frozen</th>
+<th style="text-align:center">Detergent_Paper</th>
+<th style="text-align:center">Delicatessen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Gross</td>
+<td style="text-align:center">85</td>
+<td style="text-align:center">20959</td>
+<td style="text-align:center">45828</td>
+<td style="text-align:center">36</td>
+<td style="text-align:center">24231</td>
+<td style="text-align:center">1423</td>
+</tr>
+<tr>
+<td style="text-align:center">Mean</td>
+<td style="text-align:center">12000.30</td>
+<td style="text-align:center">5796.27</td>
+<td style="text-align:center">7951.28</td>
+<td style="text-align:center">3071.94</td>
+<td style="text-align:center">2881.49</td>
+<td style="text-align:center">2566</td>
+</tr>
+</tbody>
+</table>
+<p>Sample 2: This would be a restaurant with very high fresh, frozen, milk sections and low delicatessen. Also, the level of detergent_paper, delicatessen, grocery are lower than most and very far from their mean. While Fresh, Frozen are well above mean values and milk is not very far from mean value.</p>
+<table>
+<thead><tr>
+<th style="text-align:center">Sample 2</th>
+<th style="text-align:center">Fresh</th>
+<th style="text-align:center">Milk</th>
+<th style="text-align:center">Grocery</th>
+<th style="text-align:center">Frozen</th>
+<th style="text-align:center">Detergent_Paper</th>
+<th style="text-align:center">Delicatessen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Gross</td>
+<td style="text-align:center">16936</td>
+<td style="text-align:center">6250</td>
+<td style="text-align:center">1981</td>
+<td style="text-align:center">7332</td>
+<td style="text-align:center">118</td>
+<td style="text-align:center">64</td>
+</tr>
+<tr>
+<td style="text-align:center">Mean</td>
+<td style="text-align:center">12000.30</td>
+<td style="text-align:center">5796.27</td>
+<td style="text-align:center">7951.28</td>
+<td style="text-align:center">3071.94</td>
+<td style="text-align:center">2881.49</td>
+<td style="text-align:center">2566</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
@@ -13426,8 +13522,8 @@ Once you have performed this implementation, the dataset will be stored in the v
 <p>Total variance covered by the first four PCAs : 92.75%</p>
 <p>Dimension 1: The largest variance is explained by a customer buying mostly Detergens_Paper, but also Grocery and Milk. This might be a type of supermarket, where customers tend to buy necesseties.</p>
 <p>Dimension 2: This dimension explains variance where a customer is purchasing a large amount of Fresh, Frozen, and Deli which make way for this to most probably a type of restaurant.</p>
-<p>Dimension 3: This is almost characterized by a very low fresh spend, it also doesn't cover enough Detergents_Paper, it could be a frozen food vendor.</p>
-<p>Dimension 4: A high Deli spending, followed by Fresh and Milk. could be a sandwich making vendor.</p>
+<p>Dimension 3: This principal component describes a spending pattern where there is a lot of purchase of Delicatessen, frozen, moderate amount of Milk. But, large (I would say, significant) amount of avoidance in terms of purchase of fresh and detergents_paper.</p>
+<p>Dimension 4: A high Delicatessen spending, followed by Fresh, Milk and moderate amounts of Grocery. And large amount of avoidance in Frozen and Detergents_Paper this could be a sandwich making vendor.</p>
 
 </div>
 </div>
